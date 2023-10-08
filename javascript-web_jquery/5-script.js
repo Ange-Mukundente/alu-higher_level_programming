@@ -1,3 +1,4 @@
-#!/usr/bin/node
-<div id="add_item">Click me to add an item</div>
-    <ul class="my_list">
+const $ = window.$;
+$('div#add_item').click(() => {
+  $('ul.my_list').append('<li>Item</li>');
+});
